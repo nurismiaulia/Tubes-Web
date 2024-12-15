@@ -1,0 +1,331 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Login Page */
+.login-container {
+    width: 100%;
+    max-width: 500px; /* Perbesar lebar form */
+    margin: 100px auto;
+    background-color: white;
+    padding: 30px; /* Perbesar padding form */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Perbesar jarak bawah judul */
+}
+
+.login-container input {
+    width: 100%;
+    padding: 15px; /* Perbesar padding input */
+    margin: 15px 0; /* Perbesar jarak antar input */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px; /* Perbesar ukuran font pada input */
+}
+
+.login-container button {
+    width: 100%;
+    padding: 15px; /* Perbesar padding tombol */
+    background-color: #ff79c6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Perbesar ukuran font tombol */
+}
+
+.login-container button:hover {
+    background-color: #ff4081;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #ff79c6;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ff4081;
+}
+
+/* Content */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.content h1 {
+    color: #ff79c6;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #ff79c6;
+}
+
+.card p {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form Styles (Pasien, Layanan, Jadwal) */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff79c6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff4081;
+}
+
+/* Table Styles (Pasien, Layanan, Jadwal) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 18px; /* Perbesar padding tabel */
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #ff79c6;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    max-width: 800px; /* Membesarkan lebar kontainer */
+    margin: 150px auto; /* Menyesuaikan margin untuk memperbesar jarak dengan atas */
+    background-color: white;
+    padding: 50px; /* Memperbesar padding kontainer */
+    border-radius: 15px; /* Membesarkan border-radius agar sudut lebih membulat */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Memperbesar bayangan */
+}
+
+h1 {
+    color: #ff79c6;
+    font-size: 36px; /* Memperbesar ukuran font judul */
+    margin-bottom: 30px; /* Memberikan jarak lebih banyak */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 20px 40px; /* Memperbesar padding tombol */
+    margin: 15px; /* Memperbesar jarak antar tombol */
+    background-color: #ff79c6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px; /* Memperbesar border-radius untuk sudut tombol lebih membulat */
+    font-size: 20px; /* Memperbesar ukuran font tombol */
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff4081;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: #ff4081;
+}
+
+.logout-btn:hover {
+    background-color: #ff79c6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 40px; /* Memperbesar padding pada perangkat mobile */
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 18px; /* Memperbesar ukuran font tombol di perangkat kecil */
+        margin: 15px 0;
+    }
+}
+/* Gambar di halaman Dashboard */
+.image-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.dashboard-image {
+    width: 80%; /* Ukuran gambar disesuaikan dengan lebar konten */
+    max-width: 600px; /* Menjaga agar gambar tidak lebih lebar dari 600px */
+    height: auto; /* Memastikan gambar mempertahankan rasio aslinya */
+    border-radius: 10px; /* Menambahkan sudut membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Memberikan bayangan untuk gambar */
+}
+
+/* Menambahkan margin untuk statistik */
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center; /* Memastikan elemen berada di tengah */
+}
+
+/* Card statistik */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    margin-top: 30px; /* Menambahkan jarak atas untuk memberi ruang di bawah gambar */
+}
+
+/* Menambahkan penataan lebih baik untuk kontainer gambar dan statistik */
+.dashboard-container {
+    text-align: center;
+    margin-top: 50px; /* Memberikan jarak lebih untuk elemen-elemen di bawah gambar */
+}
